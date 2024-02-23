@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        /*vale ressaltar que o absolute sempre vai interajir com o position mais velho,ou seja, pai,avo e etc, se nao ouver nenhum position ele ira interajir com o body
+        */
+        /*o sticky precisa de um bottom ou top pra interajir com a tela*/
+        #div1{
+            background-color: rgba(255,0,0,.5);
+            padding: 10px;
+            width: 90%;
+            height: 100px;
+            position: sticky;
+            bottom: 0;
+        }
+        #div2{
+            background-color: rgba(0, 255, 0, .5);
+            padding: 10px;
+            width: 80%;
+            height: 50px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        #div3{
+            background-color: rgba(0,0,255, .5);
+            padding: 10px;
+            width: 30px;
+            height: 30px;
+            position:absolute;
+            right:0;
+            bottom:0;
+        }
+    </style>
+</head>
+<body>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum ex ducimus fuga, dolorem hic voluptatum vero veritatis quasi voluptate nulla consectetur nisi. Voluptas, adipisci. Quasi dicta molestias ea repellendus similique?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum ex ducimus fuga, dolorem hic voluptatum vero veritatis quasi voluptate nulla consectetur nisi. Voluptas, adipisci. Quasi dicta molestias ea repellendus similique?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum ex ducimus fuga, dolorem hic voluptatum vero veritatis quasi voluptate nulla consectetur nisi. Voluptas, adipisci. Quasi dicta molestias ea repellendus similique?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum ex ducimus fuga, dolorem hic voluptatum vero veritatis quasi voluptate nulla consectetur nisi. Voluptas, adipisci. Quasi dicta molestias ea repellendus similique?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum ex ducimus fuga, dolorem hic voluptatum vero veritatis quasi voluptate nulla consectetur nisi. Voluptas, adipisci. Quasi dicta molestias ea repellendus similique?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum ex ducimus fuga, dolorem hic voluptatum vero veritatis quasi voluptate nulla consectetur nisi. Voluptas, adipisci. Quasi dicta molestias ea repellendus similique?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum ex ducimus fuga, dolorem hic voluptatum vero veritatis quasi voluptate nulla consectetur nisi. Voluptas, adipisci. Quasi dicta molestias ea repellendus similique?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum ex ducimus fuga, dolorem hic voluptatum vero veritatis quasi voluptate nulla consectetur nisi. Voluptas, adipisci. Quasi dicta molestias ea repellendus similique?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum ex ducimus fuga, dolorem hic voluptatum vero veritatis quasi voluptate nulla consectetur nisi. Voluptas, adipisci. Quasi dicta molestias ea repellendus similique?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum ex ducimus fuga, dolorem hic voluptatum vero veritatis quasi voluptate nulla consectetur nisi. Voluptas, adipisci. Quasi dicta molestias ea repellendus similique?</p>
+    
+    <div id="div1">
+        1
+        <div id="div2">
+            2
+            <div id="div3">3</div>
+        </div>
+    </div>
+</body>
+</html>
