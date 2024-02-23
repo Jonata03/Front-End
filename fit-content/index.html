@@ -9,36 +9,52 @@
             border: 2px solid black;
             padding: 16px;
             width: 300px;
+            margin-bottom: 15px;
+            height: 300px;
+            background-color: rgba(255, 0, 0, .5);
         }
-        div item{
-            background-color: aqua;
+        .item{
+            background-color: rgb(101, 12, 185);
+            margin-top: 15px;
+            padding: 5px;
         }
-        .fit-content{
+        .fit-content .item{
             width: fit-content;
         }
-        .min-content{
+        .min-content .item{
             width: min-content;
         }
-        .max-content{
+        .max-content .item{
             width: max-content;
+        }
+
+        .overflow-hidden{
+            overflow: hidden;
+        }
+
+        .overflow-auto{
+            overflow: auto;
+        }
+        .overflow-scroll{
+            overflow: scroll;
         }
     </style>
 </head>
 <body>
-    <div id="container .content">
-        <item class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque minima temporibus explicabo voluptate. Perspiciatis nisi molestias delectus beatae culpa? Facere cumque iusto possimus, aspernatur aperiam quis recusandae libero minus voluptatem labore voluptates fugiat suscipit, maiores laudantium, corporis perferendis iste? Nemo!</item>
-        <item class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis natus optio vero, eius iusto sapiente sed deleniti commodi accusantium eos, minima delectus aut quia assumenda excepturi nesciunt. Totam ex eos, doloribus, aliquam neque beatae expedita, rem nihil obcaecati ratione perspiciatis necessitatibus corporis mollitia. Quis quam animi voluptatum ipsam accusamus eius?</item>
-        <item class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt deleniti mollitia provident fugiat aliquid est similique cum beatae nam, sapiente delectus illum voluptate maxime blanditiis aperiam quaerat quod perspiciatis hic excepturi exercitationem cupiditate error quidem! Non maxime dolore necessitatibus in nulla consectetur, qui magni quo voluptates asperiores at nesciunt ad eum id totam maiores sequi molestiae beatae nam delectus eos iste. Mollitia, numquam quis corrupti quia id eligendi eius ab!</item>
+    <div class="container fit-content overflow-hidden">
+        <div class="item">lorem</div>
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel voluptate mollitia libero amet maxime similique beatae eveniet possimus. Et perferendis nam reprehenderit officia ad. Fugiat tempore esse at asperiores nemo?</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente at temporibus quia unde explicabo porro obcaecati fuga fugiat, nemo quos molestiae eum quas, quibusdam odit eos ratione ad numquam adipisci itaque? Magni, officiis unde ex omnis quasi deserunt neque. Numquam incidunt perspiciatis laborum ipsa quaerat, voluptatum nemo esse laudantium dignissimos molestias, voluptate reprehenderit, voluptatibus enim natus autem eos reiciendis dolores officiis tempore. Necessitatibus exercitationem velit ipsam. Excepturi illum in nihil.</div>
     </div>
-    <div id="container min-content">
-        <item class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque minima temporibus explicabo voluptate. Perspiciatis nisi molestias delectus beatae culpa? Facere cumque iusto possimus, aspernatur aperiam quis recusandae libero minus voluptatem labore voluptates fugiat suscipit, maiores laudantium, corporis perferendis iste? Nemo!</item>
-        <item class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis natus optio vero, eius iusto sapiente sed deleniti commodi accusantium eos, minima delectus aut quia assumenda excepturi nesciunt. Totam ex eos, doloribus, aliquam neque beatae expedita, rem nihil obcaecati ratione perspiciatis necessitatibus corporis mollitia. Quis quam animi voluptatum ipsam accusamus eius?</item>
-        <item class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt deleniti mollitia provident fugiat aliquid est similique cum beatae nam, sapiente delectus illum voluptate maxime blanditiis aperiam quaerat quod perspiciatis hic excepturi exercitationem cupiditate error quidem! Non maxime dolore necessitatibus in nulla consectetur, qui magni quo voluptates asperiores at nesciunt ad eum id totam maiores sequi molestiae beatae nam delectus eos iste. Mollitia, numquam quis corrupti quia id eligendi eius ab!</item>
+    <div class="container min-content overflow-auto">
+        <div class="item">lorem</div>
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel voluptate mollitia libero amet maxime similique beatae eveniet possimus. Et perferendis nam reprehenderit officia ad. Fugiat tempore esse at asperiores nemo?</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente at temporibus quia unde explicabo porro obcaecati fuga fugiat, nemo quos molestiae eum quas, quibusdam odit eos ratione ad numquam adipisci itaque? Magni, officiis unde ex omnis quasi deserunt neque. Numquam incidunt perspiciatis laborum ipsa quaerat, voluptatum nemo esse laudantium dignissimos molestias, voluptate reprehenderit, voluptatibus enim natus autem eos reiciendis dolores officiis tempore. Necessitatibus exercitationem velit ipsam. Excepturi illum in nihil.</div>
     </div>
-    <div id="container max-content">
-        <item class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque minima temporibus explicabo voluptate. Perspiciatis nisi molestias delectus beatae culpa? Facere cumque iusto possimus, aspernatur aperiam quis recusandae libero minus voluptatem labore voluptates fugiat suscipit, maiores laudantium, corporis perferendis iste? Nemo!</item>
-        <item class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis natus optio vero, eius iusto sapiente sed deleniti commodi accusantium eos, minima delectus aut quia assumenda excepturi nesciunt. Totam ex eos, doloribus, aliquam neque beatae expedita, rem nihil obcaecati ratione perspiciatis necessitatibus corporis mollitia. Quis quam animi voluptatum ipsam accusamus eius?</item>
-        <item class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt deleniti mollitia provident fugiat aliquid est similique cum beatae nam, sapiente delectus illum voluptate maxime blanditiis aperiam quaerat quod perspiciatis hic excepturi exercitationem cupiditate error quidem! Non maxime dolore necessitatibus in nulla consectetur, qui magni quo voluptates asperiores at nesciunt ad eum id totam maiores sequi molestiae beatae nam delectus eos iste. Mollitia, numquam quis corrupti quia id eligendi eius ab!</item>
+    <div class="container max-content overflow-scroll">
+        <div class="item">lorem</div>
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel voluptate mollitia libero amet maxime similique beatae eveniet possimus. Et perferendis nam reprehenderit officia ad. Fugiat tempore esse at asperiores nemo?</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente at temporibus quia unde explicabo porro obcaecati fuga fugiat, nemo quos molestiae eum quas, quibusdam odit eos ratione ad numquam adipisci itaque? Magni, officiis unde ex omnis quasi deserunt neque. Numquam incidunt perspiciatis laborum ipsa quaerat, voluptatum nemo esse laudantium dignissimos molestias, voluptate reprehenderit, voluptatibus enim natus autem eos reiciendis dolores officiis tempore. Necessitatibus exercitationem velit ipsam. Excepturi illum in nihil.</div>
     </div>
 </body>
 </html>
