@@ -1,0 +1,26 @@
+body{
+    font-size: 24px;
+    width: 700px;
+    margin:auto;
+
+    background-image: url(imagens/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+    background-attachment: fixed;
+}
+p{
+    line-height: 1.5;
+    text-align: justify;
+}
+.img-logo{
+    width: 400px;
+
+}
+
+.img-html{
+    float: left;
+}
+.img-css{
+    float: right;
+}

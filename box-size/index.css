@@ -1,0 +1,18 @@
+body{
+    background-color: #ccc;
+}
+p{
+    width: 500px;
+    background-color: aliceblue;
+}
+
+.p1{
+    padding:25px;
+    border: 10px solid green;
+}
+.p2{
+
+    padding:25px;
+    border: 10px solid green;
+    box-sizing: border-box;
+}

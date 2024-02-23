@@ -1,0 +1,27 @@
+body{
+    background-color: bisque;
+}
+
+h2{
+    text-transform: lowercase;
+    text-align: right;
+    background-color: beige;
+}
+h3{
+    font-size:38px;
+    text-transform: capitalize;
+    text-align: center;
+    text-decoration: underline;
+}
+p {
+    text-indent: 58px;
+    font-size: 28px;
+    text-align: left;
+    /* color: #0000ff; */
+    font-variant: small-caps;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}

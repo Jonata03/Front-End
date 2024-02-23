@@ -1,0 +1,52 @@
+body{
+    font-family: sans-serif;
+
+}
+
+p{
+    background-color: #ccc;
+    
+}
+
+h1{
+    background-color: rosybrown;
+    padding: 16px ;
+    border-top: 5px solid red;
+    border-left: 5px dashed red;
+
+}
+
+h2{
+    background-color: green;
+    border-bottom: 3px solid #044104;
+    border-right: 3px solid #044104;
+    padding: 20px 20px;
+}
+
+.destaque{
+    background-color: orange;
+}
+
+.size{
+    width: 50%;
+    height: 20px;
+}
+
+.padding{
+    padding: 20px 10px 40px;
+}
+
+.border{
+    /* border-width: 5px;
+    border-style: dotted;
+    border-color: black;
+    exatamente nessa ondem o atalho criado é */
+    border:5px dotted Black ;
+}
+
+.outline{
+    outline: 5px dashed red;
+}
+.border2{
+    border: 5px dashed blue;
+}
