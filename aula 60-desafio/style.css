@@ -1,0 +1,51 @@
+body{
+    background-color: aqua;
+    width: 500px;
+    margin: auto;
+}
+.title{
+    text-align: center;
+}
+.listaContatos{
+    border: 2px 
+    solid black;
+    overflow: auto;
+    width: 500px;
+    height: 500px;
+}
+.contato{
+    background-color: aliceblue;
+    padding: 10px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    gap: 20px;
+}
+.contato:hover{
+    background-color: #ececec;
+    box-shadow: 0px 1px 15px rgb(147, 147, 147);
+    z-index: 2;
+    
+}
+.contato img{
+    border-radius: 50%;
+}
+.contactInformation{
+   /*  padding: 0px 10% 0px 0px; */
+   width: 230px;
+   overflow-x: hidden;
+}
+.iconSpace{
+    flex-grow: 2;
+}
+.icons{
+    width: 20px;
+    height: auto;
+    padding: 2px;
+    margin-left: 5px;
+}
+.icons:hover{
+    width: 21px;
+    background-color: rgb(76, 76, 76);
+    cursor: pointer;
+}
