@@ -1,0 +1,52 @@
+html,body{
+    height: 100%;
+}
+body{
+    background-color: aqua;
+    margin: 0;
+    padding: 32px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+ul{
+    list-style: none;
+    gap: 16px;
+    width: 90%;
+    max-width: 960px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.individualContact{
+    background-color: rgb(255, 255, 255);
+    background-image: url(imagens/thumb01.jpg);
+    background-repeat: no-repeat;
+    border-radius: 15px;
+
+    background-size: 100%;
+    text-align: center;   
+    flex-basis: 300px;
+}
+
+.individualContact .perfilImage{
+    border-radius: 50%;
+    width: 80px;
+    margin-top:120px;
+}
+.infomationContact{
+    margin: 0;
+    font-size: 23px;
+}
+
+.icons{
+    background-color: #ccc;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+    gap: 15px;
+}
