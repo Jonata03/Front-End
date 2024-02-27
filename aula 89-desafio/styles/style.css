@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=PT+Serif:ital@1&family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=PT+Serif:ital@1&family=Roboto&family=Viaoda+Libre&display=swap');
+:root {
+    --robot: "Roboto", serif;
+    --font-family-italiana:"Italiana", "sans-serif";
+    --font-family-viaoda:font-family: "Viaoda Libre", serif;
+}
+
+
+header {
+    background-image: url(../imagens/topo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 98vh;
+    width: 100wh;
+}
+
+.nav-bar {
+    color: white;
+    background-color: #162028;
+    padding: .5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 13vh;
+    padding-top: 1%;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+}
+
+.logo {
+    font-size: 3.5em;
+    text-transform: capitalize;
+    font-family: var(--font-family-viaoda);
+    font-style:  normal;
+    margin-left: 2.5em;
+}
+
+.nav-menu li {
+    padding: 1rem;
+    margin: 0.3rem;
+    transition: .5s;
+    font-family: var( --robot );
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 6px;
+    border-radius: 5px;
+}
+.nav-menu li a{
+    text-decoration: none;
+    color: #456178;
+
+}
+
+.nav-menu li:hover {
+    background-color: #a8a8a8;
+    color: black;
+    cursor: pointer;
+}
+
+.introduction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 6em;
+}
+
+.introduction p{
+    padding: 2em;
+    text-align: center;
+    width: 55rem;
+    line-height: 2.5em;
+    text-indent: 2em;
+}
+.introduction h1{
+    font-family: var(--font-family-italiana);
+    font-size: 3em;
+}
+.model{
+    width: 50em;
+    display:flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+.model h2{
+    padding: 1rem;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: var(--robot);
+    
+
+}
+.model h4{
+    font-family: var(--robot);
+    font-size: 1em;
+}
+
+.extra-informations{
+    background-image: url(../imagens/bg_detalhe.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size:contain;
+    background-color: #003d52;
+    width: 100vw;
+    height: 98vh;
+
+    padding: 9em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.extra-informations h1{
+    font-size: 3.8em;
+    line-height: 80px;
+    color: white;
+    letter-spacing: 2px;
+    font-family: var(--font-family-italiana);
+}
+
+.extra-informations p{
+    margin: 2em 16em 2em 0;
+    font-size: 1.2rem;
+    text-align: left;
+    color: white;
+    font-family: var(--robot);
+    line-height: 1.5em;
+}
+footer{
+    text-align: center;
+    background-color: #0b171f;
+    color: #6f8597;
+    padding: 1em;
+}
