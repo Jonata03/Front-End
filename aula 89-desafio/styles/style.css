@@ -83,10 +83,11 @@ header {
     width: 55rem;
     line-height: 2.5em;
     text-indent: 2em;
+    font-size: 1.5rem;
 }
 .introduction h1{
     font-family: var(--font-family-italiana);
-    font-size: 3em;
+    font-size: 3.8em;
 }
 .model{
     width: 50em;
@@ -124,7 +125,10 @@ header {
     flex-direction: column;
     justify-content: center;
 }
-
+.extra-informations div{
+    max-width: 70vw;
+    min-width: 60vw;
+}
 
 .extra-informations h1{
     font-size: 3.8em;
