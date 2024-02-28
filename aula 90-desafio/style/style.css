@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+:root{
+    --color-nav-btn:#fbc902;
+    --robot: "Roboto", serif;
+    --background-color:#fafafa;
+}
+
+html{
+    font: 400 62.5% "Roboto", serif;
+}
+.container{
+    max-width: 127.6rem;
+    margin:auto;
+}
+
+.background-nav{
+    background-color: #2a2a2a;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.menu{
+    margin-right: 6rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    margin: 1em 1em 1em 10em;
+}
+
+.menu a{
+    text-decoration: none;
+    background-color: transparent;
+    color:var(--color-nav-btn);
+    border: 2px solid var(--color-nav-btn);
+    padding: .5em;
+    margin: 10px;
+    font-size: 1.6em;
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+
+.menu a:hover{
+    background-color: var(--color-nav-btn);
+    color: black;
+    
+}
+
+.background-introduction{
+    background: linear-gradient(to bottom, white 15%,yellow);
+}
+
+.title{
+    font-family: var(--robot);
+    font-weight: 500;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.title a{
+    text-decoration: none;
+    font-size: 0.5em;
+    text-align: center;
+    color: black;
+    border-radius: 5px;
+}
+
+.title a:hover{
+    background-color: #3c3c3c;
+    color: var(--color-nav-btn);
+}
+
+.main1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--background-color);
+    width: 100vw;
+    height: 100vh;
+    padding: 50px;
+}
+.subtitle{
+    font-size: 2.4em;
+    font-weight: 550;
+    font-family: var(--robot);
+}
+.curses-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    padding: 30px 0px;
+}
+
+.curse{
+    background-color: #ffffff;
+    margin: 1%;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.583);
+}
+.curse-text{
+    margin: 7%;
+}
+
+.curse h3{
+    font-size: 20px;
+    font-family: var(--robot);
+    font-weight: 700;
+    margin: 4% 0;
+}
+
+.curse p{
+    font-size: 100%;
+    font-family: sans-serif;
+    width: 80%;
+}
+
+.curse img{
+    width: 100%;
+}
+
+.btn-curse{
+    color: black;
+    text-decoration: none;
+    background-color: var(--color-nav-btn);
+    padding: 15px;
+    margin: 0 44%;
+    border-radius: 5px;
+    font-family: var(--robot);
+}
+
+
+.main2{
+    background-color: rgba(0, 9, 52, 0.949);
+    width: 100%;
+}
+
+.nossa-escola{
+    color: #e3e3e3;
+    display: flex;
+    padding: 2% 2% 0;
+}
+.nossa-escola-text{
+    width: 50%;
+    padding: 50px;
+}
+
+.nossa-escola-text p{
+    padding: 8% 0;
+    font-size: 1.3em;
+    font-family: var(--robot);
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2%;
+}
+.main3{
+    background-color: var(--background-color);
+
+}
+.contact h2{
+    padding: 0 0 3% 0;
+}
+
+.address{
+    text-align: right;
+    align-self: self-end;
+}
+
+footer{
+    background-color: #3c3c3c;
+    color: #e3e3e3;
+    padding: 1%;
+    text-align: center;
+}
