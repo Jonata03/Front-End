@@ -13,14 +13,29 @@ html{
     max-width: 127.6rem;
     margin:auto;
 }
-
+.wrapperContainer{
+    margin-top: 1px;
+}
+.wrapperContainer-fixed{
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.wrapperContainer-padded{
+    padding-top: 12rem;
+}
 .background-nav{
     background-color: #2a2a2a;
+    position: sticky;
 }
+
 .navbar{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 2rem 0;
+    
 }
 .menu{
     margin-right: 6rem;
@@ -29,6 +44,7 @@ html{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap:0.7em
 }
 .logo{
     margin: 1em 1em 1em 10em;
@@ -39,81 +55,89 @@ html{
     background-color: transparent;
     color:var(--color-nav-btn);
     border: 2px solid var(--color-nav-btn);
-    padding: .5em;
-    margin: 10px;
+    padding: .75em;
     font-size: 1.6em;
     text-transform: capitalize;
-    border-radius: 5px;
 }
 
 .menu a:hover{
     background-color: var(--color-nav-btn);
     color: black;
-    
 }
 
 .background-introduction{
-    background: linear-gradient(to bottom, white 15%,yellow);
+    background: linear-gradient(transparent,yellow);
 }
 
 .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10em;
+}
+
+
+.btn{
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: var(--color-nav-btn);
+    font-size: 1.8em;
+    padding: 1.6rem;
+    display:inline-block;
+    color: #2a2a2a;
+}
+
+.hero_title{
+    margin-bottom:10rem;
     font-family: var(--robot);
     font-weight: 500;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    font-size: 6em;
 }
 
-.title a{
-    text-decoration: none;
-    font-size: 0.5em;
-    text-align: center;
-    color: black;
-    border-radius: 5px;
-}
-
-.title a:hover{
+.btn:hover{
     background-color: #3c3c3c;
     color: var(--color-nav-btn);
 }
-
 .main1{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
     background-color: var(--background-color);
-    width: 100vw;
+}
+.cursos {
+    text-align: center;
     height: 100vh;
-    padding: 50px;
 }
 .subtitle{
     font-size: 2.4em;
     font-weight: 550;
     font-family: var(--robot);
+    padding: 7rem 0;
+    margin: 0;
 }
 .curses-area{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-
-    padding: 30px 0px;
+    gap: 2rem;
+    margin-bottom: 8rem;
 }
 
 .curse{
-    background-color: #ffffff;
-    margin: 1%;
+    background-color: #ffffff; 
     border-radius: 10px;
     text-align: left;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.583);
+    flex:1;
+}
+
+
+.curse p{
+    line-height: 1.5em;
 }
 .curse-text{
-    margin: 7%;
+    padding: 1rem 2rem;
 }
 
 .curse h3{
-    font-size: 20px;
+    font-size: 2.4rem;
+ 
     font-family: var(--robot);
     font-weight: 700;
     margin: 4% 0;
@@ -133,32 +157,37 @@ html{
     color: black;
     text-decoration: none;
     background-color: var(--color-nav-btn);
-    padding: 15px;
-    margin: 0 44%;
+    padding: 2rem;
     border-radius: 5px;
     font-family: var(--robot);
+    font-size: 1.2em;
 }
 
 
 .main2{
-    background-color: rgba(0, 9, 52, 0.949);
+    background-color: #003434;
     width: 100%;
 }
 
 .nossa-escola{
     color: #e3e3e3;
     display: flex;
-    padding: 2% 2% 0;
+    gap:6rem;    
+}
+.nossa-escola h2{
+    font-size: 3.2rem;
+    margin-top:2em;
+    
+}
+.nossa-escola-text p{
+    font-size: 1.3em;
+    font-size: 1.4rem;
+    line-height: 1.6em;
+    font-family: var(--robot);
+    margin-top: 3em;
 }
 .nossa-escola-text{
-    width: 50%;
-    padding: 50px;
-}
-
-.nossa-escola-text p{
-    padding: 8% 0;
-    font-size: 1.3em;
-    font-family: var(--robot);
+    text-align: left;
 }
 
 .contact{

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        body{
+            font-family: sans-serif;
+
+        }
+        table{
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        th{
+            background-color: rgb(106, 144, 106);
+        }
+        td{
+            border: 1px solid black;
+            text-align: center;
+            background-color: antiquewhite;
+            padding: 14px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Tabela de preços de cursos</caption>
+        <thead>
+            <tr>
+                <th>Area</th>
+                <th>curso</th>
+                <th>investimento</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="3">Desing</td>
+                <td>InDesing</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+            <tr>
+                
+                <td>Photoshop</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+            <tr>
+                <td>ilustrator</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+            
+            
+            <tr>
+                <td rowspan="4">Development</td>
+                <td>HTML</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+            <tr>
+                <td>css</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+            <tr>
+                <td>JS</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+            <tr>
+                <td>PHP</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+            
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">sujeito a mudança sem previo aviso</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
