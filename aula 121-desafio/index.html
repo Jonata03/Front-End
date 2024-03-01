@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="form-container">
+        <form action="">
+            <fieldset >
+                <legend>Formulário de contato</legend>
+                <section class="campo-container">
+                    <label for="nome">Seu nome</label>
+                    <input type="text" placeholder="Digite seu nome" id="nome" required autofocus class="campo espessura-campo">
+                </section> 
+                <section class="campo-container">
+                    <label for="email">E-Mail</label>
+                    <input type="email" required id="email" placeholder="Digite seu e-mail" class="campo espessura-campo">
+                </section>
+                <section class="campo-container">
+                    <label for="assunto">Assunto</label>
+                    <input type="text" required id="assunto" class="campo espessura-campo">
+                </section>
+                <section class="campo-container">
+                    <label for="">Mensagem</label>
+                    <textarea name="" id="mensagem" cols="30" rows="10" class="campo text-area" required></textarea>
+                </section>  
+            </fieldset>
+            <input type="submit" value="Enviar" class="btn-enviar">
+        </form>
+    </div>
+</body>
+</html>
