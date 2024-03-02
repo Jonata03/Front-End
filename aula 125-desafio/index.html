@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Login</title>
+</head>
+<body>
+    <form action="" class="login-form">
+        <fieldset class="login-container">
+            <legend>Login</legend>
+            <label for="usuario" class="label">Usuario</label>
+            <input type="text" id="usuario" placeholder="Nome de usuario" required class="input">
+
+            <label for="senha" class="label">Senha</label>
+            <input type="password" id="senha" placeholder="Senha" class="input" required minlength="8">
+
+            <div class="actions">
+                <div>
+                    <input type="submit" value="Login" class="btn-login text-btn"  >
+                    <a href="html/cadastro.html" class="btn-cadastro text-btn">cadastre-se</a>
+                </div>
+                <!-- <input type="button" value="cadastre-se" > -->
+                <a href="#" class="help-password">Esqueci minha senha</a>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
