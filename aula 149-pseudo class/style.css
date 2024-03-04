@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    background-color: rgb(199, 206, 212);
+}
+table{
+    background-color: antiquewhite;
+    width: 80vw;
+    height: 80vh;
+    text-align: center;
+    border-radius: 5px;
+    /* border-collapse: collapse; */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.495);
+}
+
+tr,th,td{
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: default;
+}
+
+input{
+    cursor: pointer;
+}
+tr:nth-child(odd){
+    background-color: rgb(231, 214, 192);
+}
+tr:has(td:first-child input[type="checkbox"]:checked){
+    background-color: rgb(255, 200, 128);
+}

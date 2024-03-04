@@ -1,0 +1,64 @@
+.int1{
+    display:none;
+}
+label span {
+    display: inline-block;
+    font-size: 20px;
+    width: 25px;
+    height: 25px;
+    background-color: red;
+}
+
+.int1:checked+label span{
+    background-color: blue;
+    position: relative;
+}
+
+.int1:checked+label span::before{
+    content: "";
+    display: block;
+    border: .2em solid white;
+    position:absolute;
+    top:.077em;
+    left: .38em;
+    right: .3em;
+    bottom: .3em;
+    transform: rotate(35deg);
+    border-left: transparent;
+    border-top: transparent;
+}
+
+/* input[type="checkbox"]:checked + label p{
+    padding: 3.5px;
+    border-left:5px solid black;
+    border-bottom: 3px solid black;
+    transform: rotate(-45deg)translate(8px, -8px) ;
+} */
+
+.lbl2 span{
+    display: inline-block;
+    font-size: 20px;
+    width: 25px;
+    height: 25px;
+}
+.lbl2{
+    position: relative;
+}
+.ipt2:checked + span::before{
+    content: "";
+    display: block;
+    border: .2em solid rgb(255, 255, 255);
+    position: absolute;
+    padding: .4em .15em;
+    left: 1.6em;
+    bottom: .4em;
+    border-left: transparent;
+    border-top: transparent;
+    
+    transform: rotate(45deg);
+    background-color: green;
+}
+.ipt2:checked + span{
+    background-color: green;
+
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin-bottom: 100vh;
+        }
+        div{
+            outline: 1px solid #888;
+            width: 300px;
+            margin: .5em auto;
+        }
+
+        p{
+            width: 100%;
+        }
+        .destaque{
+            background-color: yellow;
+        }
+        .div1 .destaque{
+            transform: translate(50%);
+        }
+        .div2 .destaque{
+            position: relative;
+            left: 25%;
+            top: 50%;
+        }
+        .div3 .destaque{
+            transform: rotate(45deg);
+        }
+        .div4 .destaque{
+            transform: scale(2, .5);
+            /* transform: scale(vertical, horizontal) */
+        }
+        .div5 .destaque{
+            transform: skew(45deg);
+            /* transform: skew(vertical, horizontal) */
+
+        }
+        .div6 .destaque{
+            transform: translate(200px) rotate(45deg);
+        }
+        .div7 .destaque{
+            transform:  rotate(45deg) translate(200px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, vero.</p>
+        <p class="destaque">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, vero.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, vero.</p>
+    </div>
+    <div class="div2">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, vero.</p>
+        <p class="destaque">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, vero.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, vero.</p>
+    </div>
+    <div class="div3">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, vero.</p>
+        <p class="destaque">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, vero.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, vero.</p>
+    </div>
+    <div class="div4">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, vero.</p>
+        <p class="destaque">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, vero.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, vero.</p>
+    </div>
+    <div class="div5">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, vero.</p>
+        <p class="destaque">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, vero.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, vero.</p>
+    </div>
+    <div class="div6">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, vero.</p>
+        <p class="destaque">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, vero.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, vero.</p>
+    </div>
+    <div class="div7">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, vero.</p>
+        <p class="destaque">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, vero.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, vero.</p>
+    </div>
+
+</body>
+
+</html>
