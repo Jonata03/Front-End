@@ -1,0 +1,63 @@
+:root{
+    --background-div:#383838eb;
+}
+h2{
+    margin: 1em 0;
+}
+.one-card{
+    width: 40rem;
+    text-align: justify;
+    background-color: var(--background-div);
+    margin-bottom: 3rem;
+}
+.one-card img{
+    width: 100%;
+}
+.div-text-padding{
+    padding:.5% 2%;
+    
+}
+
+.two-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5em;
+
+}
+.two-cards div{
+    width: 45.7em;
+    background-color: var(--background-div);
+    box-sizing: border-box;
+}
+.two-cards img{
+    width: 100%;
+}
+.three-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.three-cards div{
+    width: 30em;
+    background-color: var(--background-div);
+    box-sizing: border-box;
+}
+.three-cards img{
+    width: 100%;
+}
+
+.four-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+.four-cards div{
+    width: 23.3em;
+    background-color: var(--background-div);
+    box-sizing: border-box;
+}
+
+.four-cards img{
+    width: 100%;
+}
+

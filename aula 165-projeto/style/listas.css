@@ -1,0 +1,26 @@
+.lists {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.lists section {
+    width: 25em;
+    color: white;
+}
+
+.lists ol li,
+.lists ul li {
+    margin: 1em;
+}
+
+.alternate li{
+    list-style: none;
+    
+}
+.alternate li+li{
+    
+}
+.alternate {
+    padding: 0;
+}
