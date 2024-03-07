@@ -18,9 +18,7 @@
     list-style: none;
     
 }
-.alternate li+li{
-    
-}
+
 .alternate {
     padding: 0;
 }

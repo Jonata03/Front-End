@@ -1,0 +1,33 @@
+table{
+    width: 95%;
+    text-align: left;
+    border-collapse: collapse;
+    color: white;
+}
+td:nth-child(3),th:nth-child(3){
+    text-align: right;
+}
+th{
+    text-transform: uppercase;
+}
+.normal tr:nth-of-type(even){
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+table td,th{
+    padding: 2em;
+
+}
+.striped tr:nth-of-type(even){
+    background-color: #13121ec8;
+
+}
+
+.vertical-striped td:nth-child(2),.vertical-striped th:nth-child(2){
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.vertical-striped tr:nth-of-type(even){
+    background-color: #13121ec8;
+}

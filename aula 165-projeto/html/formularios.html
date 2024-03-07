@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/index.css">
     <link rel="stylesheet" href="../style/home.css">
+    <link rel="stylesheet" href="../style/formulario.css">
     <title>Armazem</title>
 </head>
+
 <body>
     <img alt="" class="img-background">
     <section class="sidebar-container">
         <div class="sidebar">
             <ul>
-                <img src="../imagens/7bca42_0c0204e7926445b3a0d8804ccc7586a5~mv2.webp" alt="foto de perfil" class="sidebar-img">
+                <img src="../imagens/7bca42_0c0204e7926445b3a0d8804ccc7586a5~mv2.webp" alt="foto de perfil"
+                    class="sidebar-img">
                 <li class="sidebar-options "><a href="../index.html" class="move">Home</a></li>
                 <li class="sidebar-options"><a href="tipografia.html" class="move">Tipografia</a></li>
                 <li class="sidebar-options"><a href="cards.html" class="move">Cards</a></li>
@@ -24,47 +28,70 @@
         </div>
     </section>
     <div class="main-container">
-        <div>
+        <div class="contact">
             <h1>My Components</h1>
             <h3>Entre em contato</h3>
-            <section>
-                <label for="">nome
-                    <input type="text" placeholder="nome completo">
-                </label>
-            </section>
-            <section>
-                <label for="">Email
-                    <input type="email">
-                </label>
-            </section>
-            <label for="">Digite sua mensagem</label>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-            <button>Enviar</button>
-        </div>
-        <div>
-            <h3>Quiz</h3>
-            <label for=""> Qual é sua linguagem preferida?
-                
-            </label>
-            <label for="">
-                Baixa Prioridade <input type="radio">
-                Media Prioridade <input type="radio" name="" id="">
-                Alta prioridade <input type="radio" name="" id="">
-            </label>
-            <label for="">Envie-me uma cópia</label>
-            <input type="checkbox">
+            <form action="">
+                <div class="contact-container space">
+                    <div class="space">
+                        <div class="name-email-container">
+                            <div class="name-email space">
+                                <label for="name">nome</label>
+                                <input type="text" id="name" placeholder="nome completo">
+                            </div>
+                            <div class="name-email space">
+                                <label for="email">Email</label>
+                                <input type="email" id="email">
+                            </div>
+                        </div>
+                        <div class="textarea space">
+                            <label for="message">Digite sua mensagem</label>
+                            <textarea name="" id="message" cols="30" rows="10"></textarea>
+                            <input type="submit" value="Enviar" class="enviar">
+                        </div>
+                    </div>
+                    <section>
+                        <p><em>endereço 1234 Somewhere Rd. Nashville, TN 00000 United States</em></p>
+                        <p><em>Telefone 000-000-000</em></p>
+                        <p><em>Email email@server.com</em></p>
+                    </section>
+                </div>
+                <div class="quiz">
+                    <h3>Quiz</h3>
+                    <div class="select">
+                        <label for="lenguage"> Qual é sua linguagem preferida?
+                        </label>
+                        <select name="" id="lenguage">
+                            <option value="Selecione">Selecione</option>
+                            <option value="Java">Java</option>
+                            <option value="PHP">PHP</option>
+                            <option value="JavaScript">JavaScript</option>
+                            <option value="Python">Python</option>
+                        </select>
+                    </div>
 
-            <label for="">Sou humano</label>
-            <input type="checkbox">
+                    <div class="priority">
+                        <label for="">Baixa Prioridade
+                            <input type="radio"></label>
+                        <label for="">Media Prioridade
+                            <input type="radio" name="" id=""></label>
+                        <label for="">Alta prioridade <input type="radio" name="" id=""></label>
 
-            <button>Limpar</button>
-            <input type="submit" value="Enviar">
+
+
+                        <label for=""><input type="checkbox"> Envie-me uma cópia</label>
+                        <label for=""><input type="checkbox"> Sou humano</label> 
+                            
+                    </div>
+                    <div class="functions">
+                        <button>Limpar</button>
+                        <input type="submit" value="Enviar">
+                    </div>
+            </form>
         </div>
-        <section>
-            <p><em>endereço 1234 Somewhere Rd. Nashville, TN 00000 United States</em></p>
-            <p><em>Telefone 000-000-000</em></p>
-            <p><em>Email email@server.com</em></p>
-        </section>
+    </div>
+
     </div>
 </body>
+
 </html>
