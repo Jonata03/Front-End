@@ -70,11 +70,18 @@ textarea{
     flex-direction: row;
     box-sizing: border-box;
     gap: 5em;
+    width: 100%;
+    flex-wrap: wrap;
 }
 .contact-container > div{
     display: flex;
     flex-direction: column;
     width: 53%;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 .space{
     gap: 2em;

@@ -4,12 +4,13 @@
     flex-wrap: wrap;
     gap: 10em;
 }
-.network a{
+.network a {
     color: #f27a03;
     font-size: 3em;
 }
 .social-midia:hover{
-    background-color: red;
+    color:white;
+    transform: scale(1.5,1.5);
 }
 
 .social-midia{
