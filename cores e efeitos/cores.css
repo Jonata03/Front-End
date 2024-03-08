@@ -1,0 +1,46 @@
+body {
+    font-family: sans-serif;
+    background-image: linear-gradient(to top, rgb(0 0 255 / .9)50%,red),url(imagens/tile.png);
+    background-attachment: fixed, scroll;
+    background-blend-mode:color;
+}
+
+.cores {
+    --teste:#f00;
+    --color:color-mix(in srgb,var(--teste),transparent 40%);
+
+    width:80%;
+    border: 5px dashed black;
+    margin: 2em;
+    padding: 2em;
+}
+.cores p{
+    margin:0;
+}
+
+section{
+    counter-reset: contador;
+}
+.cores{
+    counter-increment: contador;
+
+}
+.cores::before{
+    content:"[ " counter(contador) " ]";
+    font-weight: bold;
+}
+
+.cores:nth-of-type(2){
+    background-color: red;
+    background-clip: content-box;
+}
+.cores:nth-of-type(3){
+    background-color: hsl(100deg, 100%, 80%);
+    box-shadow: 0 15px 6px -7px hsl(100deg,100%, 50%)inset;
+    background-clip: padding-box;
+}
+.cores:nth-of-type(4){
+    background-image: linear-gradient(40deg, blue, transparent),
+    linear-gradient(to top, red,transparent);
+    background-clip: content-box,padding-box;
+}
