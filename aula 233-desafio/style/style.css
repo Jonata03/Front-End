@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+}
+:root{
+    --main-color:#4f0092;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    background-color: white;
+    align-items: center;
+
+}
+.menu img{
+    max-width: 90rem;
+}
+.nav-bar ul{
+    text-decoration: none;
+    background-color: var(--main-color);
+    padding: 0;
+    text-align: center;
+    width: 100VW;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    box-sizing: border-box;
+    /*justify-content: space-between;*/
+    gap: 3em;
+
+}
+.menu-itens a{
+    text-decoration: none;
+    color:white;
+    font-size: 3em;
+    /*padding: 0em 48%;*/
+    display: block;
+    width: 100%;
+}
+.menu-itens a:hover{
+    background-color: #754e96;
+}
+.discovery{
+    font-size: 3em;
+    color: var(--main-color);
+    text-align: center;
+    padding: 2em .2em;
+    background-color: #e5e5e5;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: .5em;
+}
+.hero_banner_play{
+    display: none;
+}
+.discovery h2{
+    font-size: 1em;
+}
+.discovery p{
+    font-size: .8em;
+}
+.discovery-btn{
+    background-color: #60b692;
+    padding: .8em 1.8em;
+    border-radius: 6px;
+    color: white;
+    font-size: .7em;
+    letter-spacing: .1em;
+}
+.services{
+    text-align: center;
+    font-size: 3em;
+    background-color: #e5e5e5;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--main-color);
+    box-sizing: border-box;
+}
+.service_container{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+
+}
+.icon{
+     font-size: 2em;
+ }
+.service_container h2{
+      font-size: 1em;
+      text-transform: uppercase;
+  }
+.service_container p{
+    font-size: .8em;
+}
+
+
+@media screen and (min-width: 50rem){
+    .menu{
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap:20%;
+        align-items: center;
+        padding: 2em;
+
+        width:100%
+
+    }
+    .nav-bar ul{
+        flex-direction: row;
+        background-color: inherit;
+        width: inherit;
+    }
+    .menu-itens a{
+        color: var(--main-color);
+        padding: 1em 3%;
+        font-size: 2em;
+    }
+    .menu-itens a:hover{
+        background-color: #ccc;
+    }
+    .discovery{
+        background-color: var(--main-color);
+        width: 100%;
+        height: auto;
+        color: white;
+        /*padding: 1em .2em;*/
+    }
+    .hero_banner_play{
+        display: block;
+        width: 4em;
+    }
+
+
+}
+@media screen and (min-width: 62rem){
+    .hero_banner_container{
+        background-image: url(../images/bg_topo_1198x670.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        width: 100%;
+        height: 70vh;
+        position: relative;
+    }
+    .discovery{
+        background-color: transparent;
+        font-size: 25px;
+        position: absolute;
+        bottom: 0;
+        gap: 1em;
+    }
+    .services{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .service_container{
+        background-color: red;
+    }
+    .division{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+}
+@media screen and (min-width: 85rem){
+    .hero_banner_container{
+        background-image: url(../images/bg_topo_1600x1374.jpg);
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .discovery{
+        position: relative;
+        width: 30em;
+    }
+    .service_container{
+        width: 20%;
+    }
+}
