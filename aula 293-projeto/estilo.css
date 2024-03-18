@@ -1,0 +1,363 @@
+
+:root {
+    --dark: #272D38;
+    --light: #FFF;
+    --primary-color: #8EADD5;
+    --primary-color-dark: #3f3f3f;
+    --gray: #F6F6F6;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--dark);
+    text-align: center;
+    margin: 0;
+}
+.img-padrao{
+    max-width: 22em;
+}
+.icon-size{
+    max-width: 1.7em;
+    margin-bottom: 3em;
+}
+
+#home {
+    padding: 2rem;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+}
+
+.header-menu {
+    list-style-type: none;
+    padding: 0;
+    text-align: right;
+    display: none;
+}
+
+.header-menu a {
+    display: block;
+    padding: 2em 0;
+}
+
+a {
+    color: inherit;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.header {
+    text-align: left;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1em;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    color: var(--light);
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: var(--primary-color-dark);
+}
+
+img {
+    max-width: 100%;
+}
+
+.branding{
+    font-size: .76em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.branding p{
+    line-height: 1.8em;
+    text-transform: capitalize;
+}
+.brands{
+    margin: 0;
+}
+.brands h2 {
+    font-size: 1rem;
+    font-weight: lighter;
+    color: #667085;
+}
+
+.brands ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: var(--gray);
+    border-radius: 5px;
+    padding: 1em;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2em;
+}
+
+.hide {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.testemunho {
+    background-color: var(--gray);
+    border-radius: 5px;
+    padding: 1.1rem;
+}
+.testemunho_nome{
+    font-weight: lighter;
+    margin-bottom: 2em;
+}
+.testemunho img{
+    width: 50%;
+}
+.testemunhos_wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+}
+
+
+.testemunhos_title{
+    font-size: 1.9em;
+}
+.contato {
+    background-color: var(--gray);
+    border-radius: 5px;
+    padding: 1.54rem;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.contato p{
+    line-height: 1.8em;
+    font-size: 1em;
+}
+.contato_image {
+    display: none;
+}
+.contato_content .btn{
+    display: block;
+    padding: 1.3em;
+}
+a.btn{
+    padding:.5em 2em;
+    text-transform: uppercase;
+    font-size:.9em;
+    margin:1em;
+}
+.footer {
+    background-color: var(--gray);
+    padding: 3rem 0;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.logo {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.copyright {
+    white-space: nowrap;
+}
+
+.hero,
+.brands,
+.branding,
+.testemunhos,
+.contato {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+@media screen and (min-width: 31.25em){
+
+    .header-menu{
+        display: flex;
+        gap: 1.5em;
+    }
+    #home{
+        display: grid;
+        grid-template-columns: repeat(12,8.33%);
+        grid-template-rows: 4em 18% 5% 10% 10% ;
+        row-gap: 2em;
+    }
+    .header{
+        grid-column: 1/-1;
+        grid-row: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .hero{
+        grid-column: 1/-1;
+        grid-row: 2;
+
+        text-align: center;
+        align-self: center;
+        margin: 0;
+
+    }
+    .content{
+        text-align: left;
+    }
+    .hero header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .hero_img{
+        align-self: center;
+    }
+
+    a.btn{
+        padding: 1em 3em;
+        margin-left: 0;
+    }
+    .brands{
+        grid-row: 3;
+        grid-column: 1/-1;
+        margin: 0;
+
+    }
+    .branding{
+        text-align: left;
+        grid-column: 1/-1;
+        grid-row: 4;
+        display: flex;
+        flex-direction: row-reverse;
+
+    }
+    .branding img{
+        max-width: 20.31rem;
+    }
+    .icon-size{
+
+    }
+    .results{
+        grid-row: 5;
+        grid-column: 1/-1;
+        display: flex;
+        text-align: left;
+        flex-direction: row;
+    }
+    .results img{
+        max-height: 20.31rem;
+    }
+    .testemunhos_title{
+        font-size: 3.2em;
+    }
+    .testemunhos{
+        grid-row: 6;
+        grid-column: 1/-1;
+        margin: 0;
+    }
+    .testemunho{
+        text-align: left;
+
+        display:flex;
+        flex-direction: row;
+        gap:3em
+    }
+    .testemunho h3{
+        font-weight: 500;
+    }
+    .testemunho_content{
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+    }
+    .testemunho img{
+        max-width: 10em;
+    }
+
+    .contato{
+        grid-row: 7;
+       grid-column: 1/-1;
+        text-align: left;
+        padding: 0 3em;
+        display:flex;
+        flex-direction: column;
+    }
+    .contato_title{
+        font-size: 3.3em;
+    }
+    .contato_image{
+        display: flex;
+        align-self: center;
+    }
+    a.btn{
+        max-width: 14em;
+        text-align: center;
+    }
+
+    .footer{
+        max-width: 100%;
+        padding:4em 3em 2em 2em;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 4em;
+    }
+    .company ul{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+
+    }
+    .copyright{
+        margin-left: 1em;
+    }
+}
+@media screen and (min-width: 90em){
+    #home{
+        padding:2em 10%;
+        gap:0
+    }
+    .hero{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .hero_title{
+        font-size: 5em;
+    }
+    .hero img{
+        display: block;
+        width: 60em;
+    }
+}
