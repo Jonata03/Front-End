@@ -13,9 +13,6 @@ body {
     text-align: center;
     margin: 0;
 }
-.img-padrao{
-    max-width: 22em;
-}
 .icon-size{
     max-width: 1.7em;
     margin-bottom: 3em;
@@ -51,6 +48,7 @@ nav a {
 
 h1 {
     font-size: 2.5rem;
+    text-transform: capitalize;
 }
 
 h2 {
@@ -212,8 +210,8 @@ a.btn{
     #home{
         display: grid;
         grid-template-columns: repeat(12,8.33%);
-        grid-template-rows: 4em 18% 5% 10% 10% ;
-        row-gap: 2em;
+        grid-template-rows: 4em 18% 5% auto auto auto;
+        row-gap: 3em;
     }
     .header{
         grid-column: 1/-1;
@@ -259,23 +257,37 @@ a.btn{
         grid-row: 4;
         display: flex;
         flex-direction: row-reverse;
+        justify-content: space-between;
+        grid-auto-columns: auto;
+        margin: 0;
 
     }
-    .branding img{
-        max-width: 20.31rem;
+    .branding-img{
+        width: 20.31rem;
     }
-    .icon-size{
-
-    }
+   
     .results{
         grid-row: 5;
         grid-column: 1/-1;
         display: flex;
         text-align: left;
         flex-direction: row;
+        justify-content: space-between;
     }
-    .results img{
-        max-height: 20.31rem;
+    .branding article,
+    .results article{
+        max-width: 27.23em;
+    }
+    .branding h2,
+    .results h2{
+        font-size: 2.875rem;
+    }
+    .branding p,
+    .results p{
+        font-size: 1rem;
+    }
+    .results-img{
+        width: 20.31rem;
     }
     .testemunhos_title{
         font-size: 3.2em;
@@ -333,6 +345,10 @@ a.btn{
         flex-wrap: wrap;
         gap: 4em;
     }
+    .footer-title h3{
+    
+        margin: 0;
+       }
     .company ul{
         display: flex;
         flex-direction: column;
@@ -346,7 +362,7 @@ a.btn{
 @media screen and (min-width: 90em){
     #home{
         padding:2em 10%;
-        gap:0
+        row-gap:2em;
     }
     .hero{
         display: flex;
@@ -356,8 +372,52 @@ a.btn{
     .hero_title{
         font-size: 5em;
     }
-    .hero img{
-        display: block;
-        width: 60em;
+    .hero_img,
+    .results-img { 
+        width: 28.12em;
+        height: 28.12em;
     }
+    .branding-img{
+        width: 28.12rem;
+    }
+    
+    .branding{
+        justify-content: space-between;
+    }
+    .results{
+        gap:10em
+    }
+    .testemunhos{
+        display: flex;
+        flex-direction: column;
+        gap:5em;
+    }
+    .testemunhos_wrapper{
+        flex-direction:row;
+        gap: 1em;
+        
+    }
+    .testemunho{
+        flex-direction: column;
+        width: 33%;
+        align-items: center;
+        text-align:center;
+        padding:2em;
+        border-radius: 25px;
+        gap: 0;
+    }
+    .contato{
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+    }
+    .contato img{
+        width: 28.12rem;
+    }
+    .contato_content{
+        max-width: 22.5rem;
+    }
+   .footer{
+    padding: 2em 10%;
+   }
+   
 }
