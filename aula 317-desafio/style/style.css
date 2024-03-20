@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700;800;900&display=swap');
+body {
+    background-image: radial-gradient(ellipse at 0 0, #fff8ce, #ffa800);
+    font-family: "Montserrat", sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+    margin: 0;
+}
+#wrapper{
+    width: 90%;
+    max-width: 1340px;
+    margin: auto;
+}
+header{
+    padding: 2em 0;
+}
+h1{
+    font-size: 66px;
+    font-weight: 800;
+    font-style: normal;
+}
+h1 strong{
+    color: red;
+    text-transform: uppercase;
+}
+.upper{
+    text-transform: uppercase;
+}
+main{
+    display: flex;
+    gap: 2rem;
+    position: relative;
+}
+main>*{
+    flex: 1 0 0;
+}
+form{
+    display: flex;
+    gap: 1em;
+}
+input[type="text"]{
+    padding: 1.7em;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: transparent;
+    outline: none;
+}
+input[type="text"]::placeholder{
+    color: black;
+}
+input[type="submit"]{
+    padding:1.7em;
+    border-radius: 10px;
+    border: 0;
+    background-color: #01013b;
+    color: white;
+    /*margin-left: 1em;*/
+}
+.animation img{
+    position: absolute;
+}
+.animation{
+    position: relative;
+}
+.animation img:nth-child(1){
+    top: -3em;
+    animation: mover 1s infinite .2s alternate;
+
+}
+.animation img:nth-child(2){
+    /*top: 6em;*/
+    right:1em;
+    animation: mover 1s infinite alternate;
+
+}
+.animation  img:nth-child(3){
+    top: -4em;
+    animation: mover 1s infinite alternate,girar 1s ease-in-out infinite alternate;
+
+}
+.animation img:nth-child(4){
+    left: 1em;
+    bottom: 0;
+    animation: mover 1s infinite alternate, enclinar 1s infinite alternate;
+
+}
+
+.animation img:nth-child(5){
+    top: 4em;
+    left: -4em;
+    animation: mover .8s infinite alternate;
+
+}
+.animation img:nth-child(6){
+    left: 25em;
+    bottom: 4em;
+    animation: mover 2s infinite alternate;
+
+}
+
+@keyframes mover {
+    0%{
+        transform: translate(2em,2em);
+    }
+
+    100%{
+        transform: translate(-1em,-1em);
+    }
+}
+/*@keyframes enclinar {*/
+/*    0%{*/
+/*        transform: translateY(1em);*/
+/*    }*/
+/*    100%{*/
+/*        transform: translateY(0em);*/
+/*    }*/
+/*}*/
+@keyframes girar {
+    0%{
+        transform: rotate(30deg);
+
+    }
+    100%{
+        transform: rotate(-30deg);
+
+    }
+}
