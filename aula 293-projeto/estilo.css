@@ -29,7 +29,7 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /*align-items: center;*/
 }
 .icon-menu{
     align-items: flex-end;
@@ -40,12 +40,14 @@ body {
     list-style-type: none;
     padding: 0;
     text-align: right;
-    display: none;
+    /*display: none;*/
 }
-
+.header-menu li{
+    padding: .25em 0;
+}
 .header-menu a {
     display: block;
-    padding: 2em 0;
+    padding: 1.75em 0;
 }
 
 a {
@@ -229,7 +231,11 @@ a.btn{
 
     .header-menu{
         display: flex;
+        flex-direction: row;
         gap: 1.5em;
+    }
+    .menu-btn,.menu-icon{
+        display: none;
     }
     #home{
         display: grid;
@@ -376,9 +382,8 @@ a.btn{
         justify-content: space-between; */
     }
     .footer-title h3{
-    
         margin: 0;
-       }
+    }
     
     
     .company{
@@ -479,4 +484,85 @@ a.btn{
    .footer_contato h3{
     margin: 0;
    }
+}
+/*menu hamburguer*/
+.menu-icon{
+    position: relative;
+    cursor: pointer;
+    height: 24px;
+
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    /*align-items: center;*/
+}
+.header-menu{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100px;
+    overflow: hidden;
+    max-height: 0;
+    background-color: white;
+    transition: max-height .4s;
+    margin: 0;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.menu-btn:checked ~ .header-menu{
+    max-height: 100vh;
+}
+
+.header-menu:focus-within{
+    max-height: 100vh;
+}
+
+@media screen and (min-width: 31.25em){
+    .header-menu {
+        position: static;
+        max-height: initial;
+        background-color: initial;
+    }
+}
+.header nav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.nav-icon{
+    background-color: #333;
+    display: inline-block;
+    height: 2px;
+    width: 24px;
+}
+
+.nav-icon::after, .nav-icon::before{
+    content: "";
+    background-color: #333;
+    display: inline-block;
+    height: 2px;
+    width: 24px;
+    position: absolute;
+    transition: transform 1s;
+
+}
+.nav-icon::after{
+    transform: translateY(8px);
+}
+.nav-icon::before{
+    transform: translateY(-8px);
+}
+.menu-btn:checked + .menu-icon .nav-icon{
+    background-color: transparent;
+}
+.menu-btn:checked + .menu-icon .nav-icon::before{
+    transform: rotate(-45deg);
+}
+.menu-btn:checked + .menu-icon .nav-icon::after{
+    transform: rotate(45deg);
+}
+.menu-btn:focus-visible+.menu-icon{
+    outline: 2px solid black;
+    outline-offset: 3px;
 }
