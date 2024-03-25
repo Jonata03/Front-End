@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n1 = parseFloat(prompt("1°numero: "))
+        let n2 = parseFloat(prompt("2°numero: "))
+        if (n1 > 10 || n2 > 10 || n1 < 0 || n2 < 0 || isNaN(n1) || isNaN(n2)){
+            alert("Digite um numero entre 0 a 10")
+        }else{
+            let media = (n1 + n2)/2
+            if (media > 5){
+                alert("APROVADO")
+            }else{
+                alert("RECUPERAÇÂO OU REPROVADO")
+            }
+
+        }
+
+
+    </script>
+</body>
+</html>
