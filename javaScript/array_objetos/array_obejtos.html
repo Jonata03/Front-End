@@ -1,10 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 </head>
 <body>
-$END$
+    <ul id="listaPessoas">
+<!--        <li>Daniel: daniel@gmail.com</li>-->
+<!--        <li>Maria: maria@gmail.com</li>-->
+<!--        <li>João: joao@gmail.com</li>-->
+    </ul>
+
+    <script>
+        const pessoas = [
+            { nome:"daniel", email:"daniel@server.com" },
+            { nome:"maria",  email:"maria@server.com" },
+            { nome:"joão", email:"joão@server.com" },
+            { nome:"luciane", email:"luciane@server.com" },
+            { nome:"ricardo",  email:"ricardo@server.com" },
+        ]
+
+        const listaPessoas = document.getElementById("listaPessoas")
+
+        for(let i = 0;i <pessoas.length;i++){
+            listaPessoas.innerHTML += `<li> ${pessoas[i].nome}: ${pessoas[i].email}</li>` 
+        }
+
+    </script>
 </body>
 </html>

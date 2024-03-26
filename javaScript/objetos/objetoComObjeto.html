@@ -1,10 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 </head>
 <body>
-$END$
+    <script>
+        // const pessoa = {
+        //     nome:"joao",
+        //     sobrenome:"Fagundes",
+        // }
+        //
+        // const endereco = {
+        //     rua:"rua das tulias",
+        //     numero: 302
+        // }
+
+        const endereco = {
+            rua:"rua das tulias",
+            numero: 302
+        }
+
+        const pessoa = {
+            nome:"joao",
+            sobrenome:"Fagundes",
+            // endereco: endereco,
+            endereco,
+        }
+        const pessoa2 = {
+            nome:"joao",
+            sobrenome:"Fagundes",
+            // endereco: endereco,
+            endereco,
+        }
+        pessoa.endereco.rua = "marechal rondom"
+        document.write(pessoa.endereco.rua)
+        document.write(pessoa2.endereco.rua)
+        // document.write(`o endereço é ${pessoa.endereco.rua}, ${pessoa.endereco.numero}`)
+    </script>
 </body>
 </html>

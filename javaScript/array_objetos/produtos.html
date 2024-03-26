@@ -1,10 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        table, th,td{
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
-$END$
+    <h1> tabela de produtos</h1>
+    <table>
+        <thead>
+        <tr>
+            <th>produto</th>
+            <th>preço</th>
+            <th>quantidade em estoque</th>
+        </tr>
+        </thead>
+        <tbody id="tabelaProdutos">
+        <tr>
+            <td>Caneta</td>
+            <td>R$ 2.00</td>
+            <td>3</td>
+        </tr>
+        </tbody>
+    </table>
+    <script>
+        const produtos =[
+            {nome: "caneta",preco:2,estoque: 3},
+            {nome: "lapis",preco:1.5,estoque: 2},
+            {nome: "borracha",preco:0.75,estoque: 6},
+            {nome: "caderno",preco:10,estoque: 1},
+            {nome: "régua",preco:4,estoque: 10},
+        ]
+        const tabelaProdutos = document.getElementById("tabelaProdutos")
+
+        for(let i = 0; i <produtos.length; i++){
+            tabelaProdutos.innerHTML +=
+                `<tr>
+                    <td>${produtos[i].nome}</td>
+                    <td>R$ ${produtos[i].preco.toFixed(2)}</td>
+                    <td>${produtos[i].estoque}</td>
+                </tr>`
+        }
+    </script>
 </body>
 </html>
