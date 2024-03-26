@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>É par</title>
+</head>
+<body>
+<label>
+  <input type="number" id="numero1">
+</label>
+<button onclick="par()">Conferir</button>
+<output id="output"></output>
+<script>
+  const numero1 = document.querySelector("#numero1")
+  const output = document.querySelector("#output")
+
+  const n1 = numero1.value
+  function par(n){
+    return n % 2 ===0
+  }
+
+  console.log(par(n1))
+</script>
+</body>
+</html>

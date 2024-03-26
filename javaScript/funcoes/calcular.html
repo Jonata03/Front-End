@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<label>
+  <input type="number" id="numero1" placeholder="valor 1">
+  <input type="number" id="numero2" placeholder="valor 2">
+  <input type="text" id="simbolo" placeholder="sinal da conta">
+</label><br>
+<button onclick="calcular()">Mostrar o calculo</button>
+<br>
+<output id="output"></output>
+<script>
+  const numero1 = document.querySelector("#numero1")
+  const numero2 = document.querySelector("#numero2")
+  const simbolo = document.querySelector("#simbolo")
+  const output = document.querySelector("#output")
+
+  function calcular(){
+    const n1 = parseFloat(numero1.value)
+    const n2 = parseFloat(numero2.value)
+    const sinal = simbolo.value
+    let valor = fazCalculo(n1,n2,sinal)
+    output.innerHTML = valor
+    limpar()
+  }
+  function fazCalculo(n1,n2,simbolo){
+    switch (simbolo){
+      case "+": return n1 + n2
+      case "-": return n1 - n2
+      case "*": return n1 * n2
+      case "/": return n1 / n2
+      default : return "digite um valor contundente"
+    }
+  }
+  function limpar(){
+    numero1.value = ""
+    numero2.value = ""
+    simbolo.value = ""
+  }
+</script>
+</body>
+</html>

@@ -8,6 +8,31 @@
     <title>Document</title>
 </head>
 <body>
+<h1>Funçoes</h1>
+<input type="number" id="number">
+<button onclick="mostrarTabuada()">mostrar</button>
+<button onclick="limpar()">Limpar tabuada</button>
+<div id="tabuada">
 
+</div>
+<script>
+
+  const input = document.getElementById("number")
+  const tabuada = document.querySelector("#tabuada")
+  function mostrarTabuada(){
+    // o tempo onde o valor digitado sera recuperado é crucial pois o valor esta sendo recuperado quando o botão esta sendo clicado
+    const inputValue= parseFloat(input.value)
+    limpar()
+    for(let i = 1;i <= 100;i++){
+      tabuadaHTML += `<p>${i} x ${inputValue} = ${i * inputValue}</p>`
+    }
+    tabuada.innerHTML = tabuadaHTML
+  }
+  function limpar(){
+      tabuadaHTML = ""
+      tabuada.innerHTML = ""
+  }
+
+</script>
 </body>
 </html>

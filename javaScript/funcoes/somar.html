@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Função somar</title>
+</head>
+<body>
+<h1>Dois valores para serem somados</h1>
+<label>
+    <input type="number" id="numero1"> +
+    <input type="number" id="numero2">
+</label>
+
+<button onclick="mostraSoma()"> Somar</button>
+<output id="output"></output>
+<script>
+    const numero1 = document.querySelector("#numero1")
+    const numero2 = document.querySelector("#numero2")
+    const output = document.querySelector("#output")
+    function calculaSoma(n1,n2){
+        return n1 + n2
+    }
+    function mostraSoma(){
+        const n1 = parseFloat(numero1.value)
+        const n2 = parseFloat(numero2.value)
+        const valor = calculaSoma(n1,n2)
+        output.innerHTML = `<p>a soma dos valores dados sao ${valor}</p>`
+    }
+</script>
+</body>
+</html>

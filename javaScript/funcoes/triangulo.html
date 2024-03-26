@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Triangulo</title>
+</head>
+<body>
+    <h1>area do triangulo</h1>
+    <label> Base
+        <input type="number" id="base">
+    </label>
+    <label> Altura
+        <input type="number" id="altura">
+    </label>
+    <button onclick="mostrarArea()">Calcular a área</button>
+    <br>
+    <output id="output"></output>
+    <script>
+        const base = document.querySelector("#base")
+        const altura = document.querySelector("#altura")
+        const output = document.querySelector("#output")
+
+        function mostrarArea(){
+            let baseValue = base.value
+            let alturaValue = altura.value
+
+            let area = (baseValue * alturaValue)/ 2
+
+            output.innerHTML = `com base ${baseValue} e altura ${alturaValue} a base é ${area}`
+        }
+    </script>
+</body>
+</html>

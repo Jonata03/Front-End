@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>area do circulo</title>
+</head>
+<body>
+<label>Raio
+    <input type="text" id="raio">
+</label>
+<button onclick="calculaArea()">Calcular Área</button>
+<br>
+<output id="output"></output>
+
+<script>
+    const raioInput = document.querySelector("#raio")
+    const outputInput = document.querySelector("#output")
+
+    let area = null
+    function calculaArea(){
+        let raio = parseFloat(raioInput.value)
+
+        area = Math.PI * (raio**2)
+
+        output.innerHTML = `area é ${area}`
+    }
+
+</script>
+</body>
+</html>
