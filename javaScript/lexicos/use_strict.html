@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>use strict</title>
+</head>
+<body>
+<script>
+    "use strict"
+    //basicamente abiga que a semantica do codigo seja correta
+    y = 10
+    //nao deixa voce usar a variavel sem declara-la
+    function foo(){
+        let x = 20
+    }
+    foo()
+    console.log(y)
+    function dobrar(n1,n1){
+        console.log(n1,n1)
+        return n1*n1
+        //com o use strict nao deixa passar parametros com o mesmo nome
+    }
+    //basicamente o use strict retira eventuais problemas que podem ocorre no seu site
+     
+</script>
+</body>
+</html>

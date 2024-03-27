@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>try catch</title>
+</head>
+<body>
+<script src="areas.js"></script>
+<script>
+    try{
+        console.log(calcularAreaRetangulo(2,3))
+    } catch (abacaxi){
+        alert("deu ruim: " + abacaxi.message)
+    }
+    try{
+        let areaTringulo = calcularAreaTriangulo(3,"as")
+        document.getElementById("output").innerHTML = `a area do triangulo é ${areaTringulo}`
+    }catch (e){}
+    try{
+        let areaCirculo = calcularAreaCirculo(4)
+        document.getElementById("output").innerHTML += `a area do circulo é ${areaCirculo}`
+    }catch (e){
+        alert("nao foi possivel calcular a area do circulo")
+    }
+    alert("fim do programa ")
+</script>
+</body>
+</html>
