@@ -27,16 +27,17 @@
 
     <script>
         const checkbox = document.getElementById("contrato")
-        const botao = document.querySelector('#button')
+        const btn = document.querySelector('form input[type="submit"]')
 
         function enableOrDisableButton(){
-            checkChecked = checkbox.checked
-            if (checkChecked){
-                console.log("checadao")
-                botao.disabled = false
-            }else{
-                botao.disabled = true
-            }
+            const checkChecked = checkbox.checked
+            // if (checkChecked){
+            //     console.log("checadao")
+            //     btn.disabled = false
+            // }else{
+            //     btn.disabled = true
+            // }
+            btn.disabled = !checkChecked
         }
 
     </script>
