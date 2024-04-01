@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array.from e Array.of</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam assumenda et quis soluta veritatis? Blanditiis expedita maxime officia qui ut, voluptatibus voluptatum? Amet consequuntur, earum minima quod recusandae vel voluptates!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam assumenda et quis soluta veritatis? Blanditiis expedita maxime officia qui ut, voluptatibus voluptatum? Amet consequuntur, earum minima quod recusandae vel voluptates!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam assumenda et quis soluta veritatis? Blanditiis expedita maxime officia qui ut, voluptatibus voluptatum? Amet consequuntur, earum minima quod recusandae vel voluptates!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam assumenda et quis soluta veritatis? Blanditiis expedita maxime officia qui ut, voluptatibus voluptatum? Amet consequuntur, earum minima quod recusandae vel voluptates!</p>
+    <script>
+        const arr1 = new Array(3)
+        console.log(arr1)
+        console.log(arr1.length)
+
+        const arr2 = Array.from(arr1)
+        console.log(arr2)
+        // arr2.push(4,5)
+
+        let paragrafos = document.querySelectorAll('p')
+        console.log(paragrafos)
+
+        paragrafos = Array.from(paragrafos)
+        //array from é util pra transformar obejtos que parecem array e que voce quer transformar ele em um array d vdd pra acessar os metodos que um array pode ter
+        paragrafos.map(function (p,i){
+            //p é o conteudo do paragrafo
+            //i é o indice dos paragrafos
+            p.textContent = `${++i}- ${p.textContent}`
+            console.log(p)
+        })
+    </script>
+</body>
+</html>
