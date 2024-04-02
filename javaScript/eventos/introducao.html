@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>eventos introducao</title>
+</head>
+<body>
+    <h1>eventos</h1>
+    <button id="btn1">botao 1</button>
+    <button id="btn2">botao 2</button>
+    <button id="btn3">botao 3</button>
+
+    <script>
+        const btn1 = document.getElementById("btn1")
+        const btn2 = document.getElementById("btn2")
+        const btn3 = document.getElementById("btn3")
+
+        function clicou(){
+            console.log("clicou atraves da funcção nomeada")
+        }
+
+        btn1.onclick = function () {
+            console.log("clicado")
+        }
+        //caso tenha uma função nomeada no mesmo botao ira sobrepor essa function
+
+        btn2.addEventListener("click",clicou)
+
+        btn2.addEventListener("click", function(){
+            console.log("clicou funcao anonima")
+        })
+        //desta forma é possivel atrelar duas funções no mesmo botao coisa que oDOM level 0 nao permite
+        //DOM level 0 é onClick="clicou()"
+
+        document.addEventListener("click",function(){
+            console.log("clicou mo document")
+        })
+        btn3.addEventListener("click",function(e){
+            // console.log(e)
+            e.stopPropagation()
+            console.log("btn3 clicado")
+        },false)
+        //imagine que a propagação do evento sobe os elementos do dom e volta quando o botao é acionado, como se fosse uma gota caindo na agua,
+        //esse valor booleano é pra inverter esse fluxo
+
+
+    </script>
+</body>
+</html>

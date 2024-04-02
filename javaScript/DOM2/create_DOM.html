@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>create html</title>
+</head>
+<body>
+    <h1>teste DOM</h1>
+    <div class="container">
+        <p>teste1</p>
+        <p>lorem <a href="#">link</a>ssdf<p>
+        <p>teste2</p>
+        <h2>lista</h2>
+
+        <ul>
+            <li>item1</li>
+            <li>item2</li>
+            <ul>
+                <li>item2</li>
+                <li>item 2.b</li>
+                <li>item 2.c</li>
+            </ul>
+            <li>item <a href="">link</a></li>
+        </ul>
+
+    </div>
+    <script>
+        const title = document.createElement("h1")
+
+        const atributo = document.createAttribute("id")
+        atributo.value = "title1"
+        title.setAttributeNode(atributo)
+
+        title.setAttribute("title","title inserido dinamicamente")
+        title.setAttribute("style","color:red")
+
+        const text = document.createTextNode("criar nos no DOM")
+        title.appendChild(text)
+
+        title.textContent = "inserindo com text content"
+        console.log(title)
+
+        document.body.appendChild(title)
+        // ------------------------------------
+        const container = document.querySelector(".container")
+        let sublevel = document.querySelector( "ul ul")
+        sublevel = sublevel.cloneNode(true)
+
+        const h2 = document.querySelector("h2")
+
+        container.insertBefore(sublevel, h2.nextElementSibling)
+        const segundoParagrafo = container.firstElementChild.nextElementSibling
+        console.log(segundoParagrafo)
+
+        segundoParagrafo.before("inserido com before")
+        segundoParagrafo.after("inserido com after")
+
+        h2.remove()
+        //removeu o h2 do dom todo
+        container.remove()
+    </script>
+</body>
+</html>
