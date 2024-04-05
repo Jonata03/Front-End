@@ -30,4 +30,4 @@ console.log(Number.MAX_VALUE, Number.MIN_VALUE)
 
 let numeroAsString = "3.456"
 console.log(isNaN(numeroAsString))
-console.log(numeroAsString, typeof numeroAsString, parseFloat(numeroAsString))
+console.log(numeroAsString, typeof numeroAsString, parseFloat(numeroAsStringf))
